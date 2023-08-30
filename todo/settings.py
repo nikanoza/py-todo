@@ -25,9 +25,6 @@ SECRET_KEY = 'django-insecure-7%x=ld%zjh103fg4h@=bw2x(doc@e7-ek%yl712)700*bostu4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,8 +42,8 @@ ALLOWED_HOSTS = ['py-todo-production.up.railway.app', '127.0.0.1']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -55,7 +52,9 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://new-todo-xi.vercel.app"
+    "https://new-todo-xi.vercel.app",
+    "https://py-todo-production.up.railway.app",
+    "http://127.0.0.1:8000"
 ]
 
 ROOT_URLCONF = 'todo.urls'
