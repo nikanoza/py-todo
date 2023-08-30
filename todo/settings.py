@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'todo'
 ]
-ALLOWED_HOSTS = ['py-todo-production.up.railway.app']
+ALLOWED_HOSTS = ['py-todo-production.up.railway.app', '127.0.0.1']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
